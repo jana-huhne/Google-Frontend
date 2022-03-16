@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>OwO</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="buttons">
+        <button type="button" onClick="location.href='image.html'">Image Search</button>
+        <button type="button" onClick="location.href='advanced.html'">Advanced Search</button>
+    </div>
+
+    <form action="https://www.google.com/search">
+        <div class="input-container">
+            <i class="fa fa-search icon"></i>
+            <input type="text" placeholder="Ask me anything ;)" name="q" id="search_field"><br>
+        </div>
+        <div class="submit-container">
+            <input type="submit" value="GO!">
+            <input type="submit" value="=^..^=" name="btnI">
+        </div>
+    </form>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+
+        body {
+            /* background-image: url("background.jpeg");
+            background-repeat: no-repeat;
+            background-position: center top; */
+
+            background: url("background.jpeg") no-repeat center center fixed;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            /* display: flex;
+            flex-direction: row; */
+        }
+
+        .input-container {
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .submit-container {
+            width: 100%;
+            height: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .icon {
+            color: white;
+            width: 20px;
+            scale: 180%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            gap: 15px;
+        }
+
+        input[type=text] {
+            width: 40%;
+            border: 2px solid rgb(127, 113, 163);
+            border-radius: 30px;
+            background-color: rgb(56, 49, 97);
+            color: white;
+            padding: 20px;
+            font-size: large;
+        }
+
+        input[type=submit] {
+            border-radius: 30px;
+            padding: 1%;
+            width: 6%;
+            color: cornflowerblue;
+            background-color: aliceblue;
+            border: 0px;
+            font-size: large;
+
+        }
+
+        input[type=submit]:hover {
+            background-color: rgb(210, 212, 231);
+
+        }
+
+        input[type=submit]:active {
+            background-color: rgb(172, 170, 201);
+        }
+
+        #buttons {
+            position: absolute;
+            display: flex;
+            justify-content: flex-end;
+            align-items: space-evenly;
+            flex-direction: row;
+            height: 20%;
+            width: 100%;
+        }
+
+        #buttons>button {
+            background-color: rgb(111, 103, 155);
+            color: rgb(255, 255, 255);
+            opacity: .8;
+            padding: 1%;
+            border: 0;
+            border-radius: 2px;
+            height: 50px;
+            width: 10%;
+            margin: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #buttons>button:hover {
+            background-color: rgb(102, 93, 153);
+
+        }
+
+        #buttons>button:active {
+            background-color: rgb(87, 78, 145);
+        }
+    </style>
+</body>
+
+</html>
